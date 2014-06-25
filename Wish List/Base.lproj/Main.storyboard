@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="JMViewController" sceneMemberID="viewController">
@@ -15,7 +15,59 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pony" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t46-DO-iQ3">
+                                <rect key="frame" x="141" y="198" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocket Ship" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kU-Dv-4MU">
+                                <rect key="frame" x="113" y="262" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elephant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCS-0Y-Y1b">
+                                <rect key="frame" x="126" y="320" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cA5-Vr-gyC">
+                                <rect key="frame" x="20" y="40" width="111" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.044139592759999999" green="1" blue="0.19062898710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Will I get one?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xFc-lb-pGU">
+                                <rect key="frame" x="168" y="40" width="132" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Want"/>
+                                    <segment title="Dont Want"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3kU-Dv-4MU" firstAttribute="top" secondItem="t46-DO-iQ3" secondAttribute="bottom" constant="43" id="2fG-S6-Kr7"/>
+                            <constraint firstItem="cA5-Vr-gyC" firstAttribute="top" secondItem="xFc-lb-pGU" secondAttribute="top" id="3Ji-LO-QV9"/>
+                            <constraint firstAttribute="centerY" secondItem="t46-DO-iQ3" secondAttribute="centerY" constant="75.5" id="7Iv-I7-KLL"/>
+                            <constraint firstItem="cA5-Vr-gyC" firstAttribute="width" secondItem="xFc-lb-pGU" secondAttribute="width" id="ArZ-TK-Ayb"/>
+                            <constraint firstAttribute="trailing" secondItem="xFc-lb-pGU" secondAttribute="trailing" constant="20" id="JA2-cJ-q4R"/>
+                            <constraint firstItem="cA5-Vr-gyC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="RpF-09-ySP"/>
+                            <constraint firstItem="t46-DO-iQ3" firstAttribute="centerX" secondItem="3kU-Dv-4MU" secondAttribute="centerX" id="TUT-vl-LLY"/>
+                            <constraint firstItem="ZCS-0Y-Y1b" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="WP2-DR-WLu"/>
+                            <constraint firstItem="3kU-Dv-4MU" firstAttribute="centerX" secondItem="ZCS-0Y-Y1b" secondAttribute="centerX" id="YW3-vL-ECt"/>
+                            <constraint firstItem="xFc-lb-pGU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="Yyl-Vi-6Qv"/>
+                            <constraint firstItem="ZCS-0Y-Y1b" firstAttribute="top" secondItem="3kU-Dv-4MU" secondAttribute="bottom" constant="37" id="fwE-BK-wey"/>
+                            <constraint firstItem="cA5-Vr-gyC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gmO-bt-dpr"/>
+                            <constraint firstItem="xFc-lb-pGU" firstAttribute="leading" secondItem="cA5-Vr-gyC" secondAttribute="trailing" constant="20" id="hUt-he-3pK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
